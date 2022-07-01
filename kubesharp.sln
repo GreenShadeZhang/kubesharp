@@ -1,14 +1,90 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kubesharp.Kube.Client", "kube\Kubesharp.Kube.Api\Kubesharp.Kube.Client.csproj", "{C0D43807-3C1B-4A1D-B8A3-F726AE7BC542}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kube", "kube", "{114DEFDE-183A-4E84-A9A2-A81684499DE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{BD67D1DE-F732-4CA0-979F-FBA5B851B3E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kubesharp.Core", "core\Kubesharp.Core\Kubesharp.Core.csproj", "{0B45CEF2-1575-4787-ACBA-35743E6B4478}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EDDF871D-9040-464B-8D2B-95EE03FA04D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{5EEB0AEA-DD20-4052-A637-2F3A92F93F15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kubesharp.Api", "api\Kubesharp.Api\Kubesharp.Api.csproj", "{B1D8CFC7-A08A-4C37-B08E-3ADD57068FE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kubesharp.Abstractions", "core\Kubesharp.Abstractions\Kubesharp.Abstractions.csproj", "{F7234AD0-48C6-4EAB-8C58-F5F1CDCE4090}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "modules", "modules", "{C64D98F0-721B-4E35-B15F-37BF093B70C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kubesharp.Web", "core\Kubesharp.Web\Kubesharp.Web.csproj", "{4570939D-C39F-44E6-97A1-E9DA3D7F40A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{4F7FE9FC-6E75-483C-BCC6-6333808E4C73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kubesharp.Modules.Yaml", "core\modules\Kubesharp.Modules.Yaml\Kubesharp.Modules.Yaml.csproj", "{6C73D7C8-2BE7-4DF6-9936-795C34A914DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kubesharp.Modules.Redis", "core\modules\Kubesharp.Modules.Redis\Kubesharp.Modules.Redis.csproj", "{09C4C638-EFA4-4604-8CB8-D98AEB18CD0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kubesharp.Kube.Config", "Kubesharp.Kube.Config\Kubesharp.Kube.Config.csproj", "{FB8BA73F-75DA-4B06-9953-EDDA1FAC8415}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0D43807-3C1B-4A1D-B8A3-F726AE7BC542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D43807-3C1B-4A1D-B8A3-F726AE7BC542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D43807-3C1B-4A1D-B8A3-F726AE7BC542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D43807-3C1B-4A1D-B8A3-F726AE7BC542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B45CEF2-1575-4787-ACBA-35743E6B4478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B45CEF2-1575-4787-ACBA-35743E6B4478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B45CEF2-1575-4787-ACBA-35743E6B4478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B45CEF2-1575-4787-ACBA-35743E6B4478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D8CFC7-A08A-4C37-B08E-3ADD57068FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D8CFC7-A08A-4C37-B08E-3ADD57068FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D8CFC7-A08A-4C37-B08E-3ADD57068FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D8CFC7-A08A-4C37-B08E-3ADD57068FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7234AD0-48C6-4EAB-8C58-F5F1CDCE4090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7234AD0-48C6-4EAB-8C58-F5F1CDCE4090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7234AD0-48C6-4EAB-8C58-F5F1CDCE4090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7234AD0-48C6-4EAB-8C58-F5F1CDCE4090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4570939D-C39F-44E6-97A1-E9DA3D7F40A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4570939D-C39F-44E6-97A1-E9DA3D7F40A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4570939D-C39F-44E6-97A1-E9DA3D7F40A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4570939D-C39F-44E6-97A1-E9DA3D7F40A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C73D7C8-2BE7-4DF6-9936-795C34A914DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C73D7C8-2BE7-4DF6-9936-795C34A914DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C73D7C8-2BE7-4DF6-9936-795C34A914DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C73D7C8-2BE7-4DF6-9936-795C34A914DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C4C638-EFA4-4604-8CB8-D98AEB18CD0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C4C638-EFA4-4604-8CB8-D98AEB18CD0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C4C638-EFA4-4604-8CB8-D98AEB18CD0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C4C638-EFA4-4604-8CB8-D98AEB18CD0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB8BA73F-75DA-4B06-9953-EDDA1FAC8415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8BA73F-75DA-4B06-9953-EDDA1FAC8415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8BA73F-75DA-4B06-9953-EDDA1FAC8415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8BA73F-75DA-4B06-9953-EDDA1FAC8415}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C0D43807-3C1B-4A1D-B8A3-F726AE7BC542} = {114DEFDE-183A-4E84-A9A2-A81684499DE7}
+		{0B45CEF2-1575-4787-ACBA-35743E6B4478} = {BD67D1DE-F732-4CA0-979F-FBA5B851B3E8}
+		{B1D8CFC7-A08A-4C37-B08E-3ADD57068FE6} = {4F7FE9FC-6E75-483C-BCC6-6333808E4C73}
+		{F7234AD0-48C6-4EAB-8C58-F5F1CDCE4090} = {BD67D1DE-F732-4CA0-979F-FBA5B851B3E8}
+		{C64D98F0-721B-4E35-B15F-37BF093B70C9} = {BD67D1DE-F732-4CA0-979F-FBA5B851B3E8}
+		{4570939D-C39F-44E6-97A1-E9DA3D7F40A2} = {BD67D1DE-F732-4CA0-979F-FBA5B851B3E8}
+		{6C73D7C8-2BE7-4DF6-9936-795C34A914DF} = {C64D98F0-721B-4E35-B15F-37BF093B70C9}
+		{09C4C638-EFA4-4604-8CB8-D98AEB18CD0D} = {C64D98F0-721B-4E35-B15F-37BF093B70C9}
+		{FB8BA73F-75DA-4B06-9953-EDDA1FAC8415} = {114DEFDE-183A-4E84-A9A2-A81684499DE7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BB70BF8-9906-454C-BD18-1CF2803A9DFC}
 	EndGlobalSection
 EndGlobal
