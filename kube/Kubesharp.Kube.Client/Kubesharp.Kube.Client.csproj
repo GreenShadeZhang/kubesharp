@@ -7,9 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="EventBus\" />
-    <Folder Include="WebHost\" />
-    <Folder Include="Cache\" />
+    <PackageReference Include="KubernetesClient" Version="8.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
