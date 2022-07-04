@@ -1,9 +1,4 @@
-using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using k8s;
 
@@ -11,7 +6,7 @@ namespace Kubesharp.Kube.Api.Client;
 
 internal class KubeClientFactory
 {
-    private readonly ConcurrentDictionary<string, Task<KubeClient>> _clients;
+    private readonly ConcurrentDictionary<string, Task<KubeClient>> _clients = new();
 
     async Task<KubeClient> CreateOrGetKubeClientAsync(string userId, Func<string, Stream> configFileFunc)
     {

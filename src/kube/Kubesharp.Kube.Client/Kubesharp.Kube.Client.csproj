@@ -14,4 +14,8 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Kubesharp.Kube.Abstractions\Kubesharp.Kube.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>
