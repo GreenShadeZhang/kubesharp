@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="EventBus\" />
+    <Folder Include="WebHost\" />
+    <Folder Include="Cache\" />
+  </ItemGroup>
+
 </Project>
