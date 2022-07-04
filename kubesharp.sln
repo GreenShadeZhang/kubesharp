@@ -62,7 +62,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D4B54680-0C8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{B3CAE473-03EC-4D73-9049-30AD2C7CD6B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kubesharp.Modules.MediatR", "src\core\modules\Kubesharp.Modules.MediatR\Kubesharp.Modules.MediatR.csproj", "{542D4304-386E-4996-9F97-DF6E500CEEDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kubesharp.Modules.MediatR", "src\core\modules\Kubesharp.Modules.MediatR\Kubesharp.Modules.MediatR.csproj", "{542D4304-386E-4996-9F97-DF6E500CEEDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kube", "kube", "{889A75F7-1B1C-4C7A-92BD-83A14FBC5EBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kubesharp.Kube.UnitTest", "tests\kube\Kubesharp.Kube.UnitTest\Kubesharp.Kube.UnitTest.csproj", "{F8AFBBB9-A2FC-4AFC-9E61-2AA2801DCFCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -130,6 +134,10 @@ Global
 		{542D4304-386E-4996-9F97-DF6E500CEEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{542D4304-386E-4996-9F97-DF6E500CEEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{542D4304-386E-4996-9F97-DF6E500CEEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8AFBBB9-A2FC-4AFC-9E61-2AA2801DCFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8AFBBB9-A2FC-4AFC-9E61-2AA2801DCFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8AFBBB9-A2FC-4AFC-9E61-2AA2801DCFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8AFBBB9-A2FC-4AFC-9E61-2AA2801DCFCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -157,6 +165,8 @@ Global
 		{77A8399E-F993-4881-A861-36C3AC11247E} = {C7EBCF25-FA4F-4334-81E2-59424E712598}
 		{574452C9-DCC2-42E6-87C9-7EF709BEFB2D} = {BD67D1DE-F732-4CA0-979F-FBA5B851B3E8}
 		{542D4304-386E-4996-9F97-DF6E500CEEDF} = {C64D98F0-721B-4E35-B15F-37BF093B70C9}
+		{889A75F7-1B1C-4C7A-92BD-83A14FBC5EBD} = {EFB000EE-205B-46DF-8413-57C869F5D25F}
+		{F8AFBBB9-A2FC-4AFC-9E61-2AA2801DCFCC} = {889A75F7-1B1C-4C7A-92BD-83A14FBC5EBD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7BB70BF8-9906-454C-BD18-1CF2803A9DFC}
