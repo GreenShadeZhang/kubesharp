@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\kube\Kubesharp.Kube.Abstractions\Kubesharp.Kube.Abstractions.csproj" />
+    <ProjectReference Include="..\Kubesharp.Abstractions\Kubesharp.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Event\" />
+  </ItemGroup>
+
 </Project>

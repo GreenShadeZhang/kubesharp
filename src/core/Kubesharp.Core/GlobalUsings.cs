@@ -1,0 +1,1 @@
+global using Kubesharp.Abstractions.Interfaces;

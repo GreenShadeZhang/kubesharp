@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Kubesharp.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:49590;http://localhost:49591"
+    }
+  }
+}

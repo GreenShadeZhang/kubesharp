@@ -8,6 +8,15 @@
 
   <ItemGroup>
     <Folder Include="Controller\新文件夹\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Kubesharp.Core\Kubesharp.Core.csproj" />
   </ItemGroup>
 
 </Project>

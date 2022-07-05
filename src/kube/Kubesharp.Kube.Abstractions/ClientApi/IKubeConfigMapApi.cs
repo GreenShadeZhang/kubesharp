@@ -1,5 +1,5 @@
 namespace Kubesharp.Kube.Abstractions.ClientApi;
 
-public interface IKubeIngressApi : IKubeApi
+public interface IKubeConfigMapApi : IKubeApi
 {
 }
