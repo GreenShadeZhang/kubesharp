@@ -3,9 +3,8 @@ namespace Kubesharp.Api.Controller;
 public class NamespaceController : ControllerBase
 {
     [HttpGet]
-    public void ListAsync()
+    public Task<IActionResult> ListAsync()
     {
-
         throw new NotImplementedException();
     }
 }
