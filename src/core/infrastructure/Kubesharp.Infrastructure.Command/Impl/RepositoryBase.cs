@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
 
-namespace Kubesharp.Infrastructure.Command.Impl;
+namespace Kubesharp.Service.Command.Impl;
 
 internal class RepositoryBase<T> : IRepositoryBase<T> where T : class
 {

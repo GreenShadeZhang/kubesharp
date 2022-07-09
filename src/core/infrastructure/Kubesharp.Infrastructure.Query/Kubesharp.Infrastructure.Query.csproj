@@ -10,4 +10,12 @@
     <PackageReference Include="Dapper" Version="2.0.123" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Kubesharp.Abstractions\Kubesharp.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>

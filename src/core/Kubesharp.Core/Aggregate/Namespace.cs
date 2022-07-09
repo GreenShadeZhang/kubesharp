@@ -14,6 +14,5 @@ public class Namespace : IAggregateRoot
 
         this.Name = newName;
     }
-
     #endregion
 }

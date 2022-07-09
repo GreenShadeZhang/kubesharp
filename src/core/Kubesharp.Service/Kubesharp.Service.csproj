@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DataService\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\kube\Kubesharp.Kube.Abstractions\Kubesharp.Kube.Abstractions.csproj" />
+    <ProjectReference Include="..\Kubesharp.Basic\Kubesharp.Basic.csproj" />
+    <ProjectReference Include="..\Kubesharp.Core\Kubesharp.Core.csproj" />
+  </ItemGroup>
+
+</Project>
