@@ -1,3 +1,5 @@
+using Kubesharp.Kube.Abstractions.Interfaces;
+
 namespace Kubesharp.Service.KubeServices;
 
 internal class KubeNamespaceService : IKubeNamespaceService
