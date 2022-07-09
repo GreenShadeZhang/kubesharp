@@ -8,5 +8,4 @@ global using k8s;
 global using k8s.Models;
 global using Kubesharp.Kube.Abstractions.Models;
 global using Kubesharp.Kube.Abstractions.ClientApi;
-//global using Kubesharp.Kube.Client.Api;
 global using Kubesharp.Kube.Client.Extension;

@@ -31,7 +31,8 @@ internal class KubePodApi : IKubePodApi
 
     public async Task<List<PodDto>> ListAsync(string @namespace, CancellationToken cancellationToken)
     {
-        var list = await _kubeClient.ListNamespacedPodAsync(@namespace, cancellationToken: cancellationToken);
+        var list = await _kubeClient
+            .ListNamespacedPodAsync(@namespace, cancellationToken: cancellationToken);
 
         return list.ToDtoList();
     }

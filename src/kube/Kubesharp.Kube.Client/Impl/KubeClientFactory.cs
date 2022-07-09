@@ -1,14 +1,12 @@
 using System.Collections.Concurrent;
 
-using k8s;
-
 namespace Kubesharp.Kube.Client.Impl;
 
-public class KubeClientFactory
+public class KubeClientFactory : IKubeClientFactory
 {
     private readonly ConcurrentDictionary<string, Task<KubeClient>> _clients = new();
 
-    public async Task<KubeClient> CreateOrGetKubeClientAsync(string userId, Func<string, Stream> configFileFunc)
+    public async Task<IKubeClient> CreateOrGetKubeClientAsync(string userId, Func<string, Stream> configFileFunc)
     {
         return await _clients.GetOrAdd(userId, async p =>
         {

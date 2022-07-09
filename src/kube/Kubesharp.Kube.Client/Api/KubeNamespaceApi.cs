@@ -32,7 +32,8 @@ internal class KubeNamespaceApi : IKubeNamespaceApi
     public async Task<List<NamespaceDto>> ListAsync(
         CancellationToken cancellationToken)
     {
-        var namespaces = await _kubeClient.ListNamespaceAsync(cancellationToken: cancellationToken);
+        var namespaces = await _kubeClient
+            .ListNamespaceAsync(cancellationToken: cancellationToken);
 
         return namespaces.ToDtoList();
     }

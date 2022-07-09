@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\modules\Kubesharp.Modules.Yaml\Kubesharp.Modules.Yaml.csproj" />
+  </ItemGroup>
+
 </Project>
