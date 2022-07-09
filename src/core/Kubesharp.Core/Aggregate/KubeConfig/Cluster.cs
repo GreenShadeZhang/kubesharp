@@ -3,7 +3,7 @@ namespace Kubesharp.Core.Aggregate;
 /// <summary>
 /// 集群
 /// </summary>
-public class Cluster : IAggregateRoot
+public class Cluster : EntityBase, IAggregateRoot
 {
     #region Property
     /// <summary>
