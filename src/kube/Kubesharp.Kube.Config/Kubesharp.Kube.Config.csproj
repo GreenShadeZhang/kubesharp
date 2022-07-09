@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\core\modules\Kubesharp.Modules.Yaml\Kubesharp.Modules.Yaml.csproj" />
+    <ProjectReference Include="..\Kubesharp.Kube.Abstractions\Kubesharp.Kube.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-namespace Kubesharp.Kube.Abstractions.ClientApi;
+namespace Kubesharp.Kube.Abstractions.Interfaces;
 
 public interface IKubeClientFactory
 {
