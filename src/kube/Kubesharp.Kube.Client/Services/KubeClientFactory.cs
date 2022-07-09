@@ -6,6 +6,13 @@ namespace Kubesharp.Kube.Client.Services;
 
 public class KubeClientFactory : IKubeClientFactory
 {
+    private readonly Dictionary<bool, Task<bool>> _disconnectResult =
+        new()
+        {
+            { true, Task.FromResult(true) },
+            { false, Task.FromResult(false) },
+        };
+
     private readonly ConcurrentDictionary<KubeConnectionOptions, Task<KubeClient>>
         _clients = new(KubeConnectionComparer.Instance);
 
@@ -14,7 +21,7 @@ public class KubeClientFactory : IKubeClientFactory
     {
         return await _clients.GetOrAdd(config, p =>
         {
-            var options = configFileFunc?.Invoke(p);
+            var options = configFileFunc?.Invoke(p) ?? p;
 
             var config = K8sConfigBuilder.Build(options);
 
@@ -36,10 +43,10 @@ public class KubeClientFactory : IKubeClientFactory
         });
     }
 
-    public bool Disconnect(KubeConnectionOptions config)
+    public Task<bool> DisconnectAsync(KubeConnectionOptions config)
     {
-        _clients.TryRemove(config, out var _);
+        var result = _clients.TryRemove(config, out var _);
 
-        return Task.FromResult();
+        return _disconnectResult[result];
     }
 }
