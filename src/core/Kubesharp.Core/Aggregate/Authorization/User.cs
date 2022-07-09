@@ -25,7 +25,7 @@ internal class User : EntityBase, IAggregateRoot
         throw new NotImplementedException();
     }
 
-    public string SetPassword(string newPassword)
+    public void SetPassword(string newPassword)
     {
         this.Password = newPassword;
     }
